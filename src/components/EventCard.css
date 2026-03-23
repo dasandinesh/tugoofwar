@@ -1,0 +1,37 @@
+.card-box {
+  border: 1px solid #000;
+  padding: 20px;
+  width: 100%;
+  min-height: 180px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.card-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.09);
+  background: #fffdfd;
+}
+
+.card-box h3 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.date-display {
+  font-size: 28px;
+  margin: 15px 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.location-underline {
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  font-weight: 800;
+  padding-bottom: 2px;
+}

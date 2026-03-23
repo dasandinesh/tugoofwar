@@ -1,0 +1,115 @@
+.site-header { 
+    width: 100%; 
+    border-bottom: 1px solid #000; 
+  }
+  
+  .top-bar { 
+    display: flex; 
+    align-items: center;    /* அனைத்தையும் ஒரே நேர்க்கோட்டில் வைக்க */
+    justify-content: space-between; 
+    padding: 15px 30px; 
+    background-color: #ecc8c8;
+    border-bottom: 1px solid #000;
+  }
+  
+  .top-bar a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.top-bar a:hover {
+    background-color: #d1a3a3;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .title-box h1 {
+        font-size: 24px;
+    }
+} 
+  
+  /* இடதுபுறம் லோகோ மட்டும் */
+  .logo-section {
+    display: flex;
+    align-items: center;
+    width: 150px; /* காண்டாக்ட் செக்ஷன் அளவுக்கு சமமாக வைக்க (Centering சரியாக வர) */
+  }
+  
+  .logo-circle { 
+    width: 50px; 
+    height: 50px; 
+    border: 2px solid #000; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  /* நடுவில் இருக்கும் டைட்டில் செக்ஷன் */
+  .title-box {
+    flex: 1;              /* நடுவில் உள்ள இடத்தை முழுமையாக எடுக்கும் */
+    text-align: center;   /* டெக்ஸ்டை மையப்படுத்தும் */
+  }
+  
+  .title-box h1 { 
+    margin: 0; 
+    font-size: 28px; 
+    text-transform: lowercase; 
+    letter-spacing: 1px;
+  }
+  
+  .title-box span { 
+    font-size: 14px; 
+    color: #333; 
+  }
+  
+  /* வலதுபுறம் காண்டாக்ட் விவரங்கள் */
+  .contact-details {
+    width: 150px;         /* லோகோ செக்ஷன் அளவுக்கு சமமாக */
+    text-align: right;    /* வலதுபுறமாக அலைன் செய்ய */
+    font-size: 13px;
+  }
+  
+  .contact-details p { margin: 2px 0; }
+  
+  /* மெனு செக்ஷன் */
+  .main-nav ul { 
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+    border-top: 1px solid #ccc; 
+    padding: 0; 
+    margin: 0; 
+    background-color: #464543bc;
+  }
+  
+  .main-nav li { 
+    padding: 10px 40px; 
+    border-right: 1px solid #ccc; 
+    cursor: pointer; 
+  }
+
+  .main-nav li:last-child {
+    border-right: none;
+  }
+
+  .main-nav li:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .main-nav li.active {
+    background-color: rgba(0, 0, 0, 0.25);
+    font-weight: 800;
+  }
+  h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+  }

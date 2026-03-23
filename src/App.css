@@ -1,38 +1,68 @@
-.App {
+/* Full Page Setup */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Side scroll thavirkka */
+}
+
+.app-container {
+  width: 100%;
+  max-width: 100%; /* Inga limit panna koodathu */
+  margin: 0;
+  padding: 0;
+}
+
+/* Content wrapper (Buttons, Text, Cards mattum center-la irukka) */
+.content-wrapper {
+  max-width: 1200px; /* Unga sketch elements indha width-kulla irukkum */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Event Grid setup */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto; /* Grid center-la irukkum */
+  padding: 0 20px;
+}
+
+.cta-heading {
   text-align: center;
+  margin: 18px 0 0;
+  padding: 0 20px;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: lowercase;
+  color: #121212;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cta-heading::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  margin: 12px auto 0;
+  background: #d1a3a3;
+  border-radius: 999px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 900px) {
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px) {
+  .cta-heading {
+    font-size: 26px;
   }
-  to {
-    transform: rotate(360deg);
+  .grid-layout {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
   }
 }
