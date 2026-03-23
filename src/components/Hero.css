@@ -1,0 +1,127 @@
+.hero-container {
+    width: 100vw; /* Viewport Width - Full screen wide */
+    margin-left: calc(-50vw + 50%); /* Center-la irundhu full screen stretch panna */
+    margin-right: calc(-50vw + 50%);
+    overflow: hidden;
+  }
+  
+
+
+  
+  
+  /* Smooth transition for auto-slider */
+  .fade-animation {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+  }
+
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #f9f5f5;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   /* 👈 change here */
+    display: block;
+  }
+
+/* Slider controls */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.slider-btn:hover {
+  background: rgba(0, 0, 0, 0.4);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.slider-btn:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.slider-btn.prev {
+  left: 16px;
+}
+
+.slider-btn.next {
+  right: 16px;
+}
+
+/* Dots indicators */
+.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+}
+
+.dot:hover {
+  transform: scale(1.15);
+}
+
+.dot.active {
+  background: rgba(0, 0, 0, 0.75);
+  transform: scale(1.25);
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    height: 55vh;
+  }
+
+  .slider-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .slider-wrapper {
+    height: 50vh;
+  }
+
+  .slider-btn.prev {
+    left: 10px;
+  }
+
+  .slider-btn.next {
+    right: 10px;
+  }
+}
