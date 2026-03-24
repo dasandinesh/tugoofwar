@@ -1,37 +1,28 @@
-.card-box {
-  border: 1px solid #000;
-  padding: 20px;
-  width: 100%;
-  min-height: 180px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-}
-
-.card-box:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.09);
-  background: #fffdfd;
-}
-
-.card-box h3 {
-  margin: 0;
-  font-size: 18px;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.date-display {
-  font-size: 28px;
-  margin: 15px 0;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.location-underline {
-  border-bottom: 2px solid #000;
+/* Link → Button look */
+.register-link {
   display: inline-block;
-  font-weight: 800;
-  padding-bottom: 2px;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
 }
+
+.register-link:hover {
+  background: white;
+  transform: scale(1.05);
+}
+.card-box {
+  background: linear-gradient(135deg, #111, #8B0000);
+
+  padding: 25px;
+  border-radius: 15px;
+  width: 100%;
+
+}
+
+/* TITLE */
+

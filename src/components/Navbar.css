@@ -1,115 +1,139 @@
-.site-header { 
-    width: 100%; 
-    border-bottom: 1px solid #000; 
-  }
-  
-  .top-bar { 
-    display: flex; 
-    align-items: center;    /* அனைத்தையும் ஒரே நேர்க்கோட்டில் வைக்க */
-    justify-content: space-between; 
-    padding: 15px 30px; 
-    background-color: #ecc8c8;
-    border-bottom: 1px solid #000;
-  }
-  
-  .top-bar a {
-    color: #000;
-    text-decoration: none;
-    padding: 10px;
+/* RESET */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.top-bar a:hover {
-    background-color: #d1a3a3;
-    border-radius: 5px;
+/* HEADER */
+.site-header {
+  width: 100%;
 }
 
+/* 🔥 TOP BAR */
+.top-bar {
+  display: flex;
+  align-items: center;   /* 🔥 center align */
+  justify-content: space-between;
+  height: 100px;         /* 🔥 FIXED HEIGHT */
+  padding: 0 5px;
+  overflow: hidden;      /* 🔥 extra content hide */
+}
+.contact-details {
+  font-size: 12px;
+  line-height: 1.2;
+  max-height: 80px;   /* 🔥 height limit */
+  overflow: hidden;
+     /* 🔥 extra hide */
+}
+
+/* LOGO */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+.logo-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;   /* 🔥 முக்கியம் */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 🔥 circle fill ஆகும் */
+}
+/* TITLE */
+.title-box {
+  text-align: center;
+  
+}
+
+.title-box h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.title-box span {
+  font-size: 14px;
+  color: #1f1d1d;
+}
+
+/* CONTACT */
+.contact-details {
+  text-align: right;
+  font-size: 14px;
+}
+
+/* 🔥 MENU BAR */
+.main-nav {
+  background: #000;
+  border-top: 2px solid gold;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  padding: 14px 35px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* 🔥 Hover effect */
+.main-nav li:hover {
+  color: gold;
+}
+
+/* 🔥 Underline Animation */
+.main-nav li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: gold;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.main-nav li:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE */
+.main-nav li.active {
+  color: gold;
+}
+
+/* 🔥 MOBILE */
 @media (max-width: 768px) {
-    .top-bar {
-        flex-direction: column;
-        padding: 10px;
-    }
-    .title-box h1 {
-        font-size: 24px;
-    }
-} 
-  
-  /* இடதுபுறம் லோகோ மட்டும் */
-  .logo-section {
-    display: flex;
-    align-items: center;
-    width: 150px; /* காண்டாக்ட் செக்ஷன் அளவுக்கு சமமாக வைக்க (Centering சரியாக வர) */
+
+  .top-bar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 10px;
   }
-  
-  .logo-circle { 
-    width: 50px; 
-    height: 50px; 
-    border: 2px solid #000; 
-    border-radius: 50%; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-  }
-  
-  /* நடுவில் இருக்கும் டைட்டில் செக்ஷன் */
-  .title-box {
-    flex: 1;              /* நடுவில் உள்ள இடத்தை முழுமையாக எடுக்கும் */
-    text-align: center;   /* டெக்ஸ்டை மையப்படுத்தும் */
-  }
-  
-  .title-box h1 { 
-    margin: 0; 
-    font-size: 28px; 
-    text-transform: lowercase; 
-    letter-spacing: 1px;
-  }
-  
-  .title-box span { 
-    font-size: 14px; 
-    color: #333; 
-  }
-  
-  /* வலதுபுறம் காண்டாக்ட் விவரங்கள் */
+
   .contact-details {
-    width: 150px;         /* லோகோ செக்ஷன் அளவுக்கு சமமாக */
-    text-align: right;    /* வலதுபுறமாக அலைன் செய்ய */
-    font-size: 13px;
-  }
-  
-  .contact-details p { margin: 2px 0; }
-  
-  /* மெனு செக்ஷன் */
-  .main-nav ul { 
-    display: flex; 
-    justify-content: center; 
-    list-style: none; 
-    border-top: 1px solid #ccc; 
-    padding: 0; 
-    margin: 0; 
-    background-color: #464543bc;
-  }
-  
-  .main-nav li { 
-    padding: 10px 40px; 
-    border-right: 1px solid #ccc; 
-    cursor: pointer; 
+    text-align: center;
   }
 
-  .main-nav li:last-child {
-    border-right: none;
+  .main-nav ul {
+    flex-direction: column;
   }
 
-  .main-nav li:hover {
-    background-color: rgba(0, 0, 0, 0.15);
+  .main-nav li {
+    border-top: 1px solid #444;
   }
-
-  .main-nav li.active {
-    background-color: rgba(0, 0, 0, 0.25);
-    font-weight: 800;
-  }
-  h1{
-    text-transform: uppercase;
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
-  }
+}
