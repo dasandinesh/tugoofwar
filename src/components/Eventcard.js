@@ -8,13 +8,12 @@ const EventCard = ({ date, location }) => {
 
       <h3 className="card-title">Register Now</h3>
 
-      <div className="date-display">{date}</div>
 
       <div className="location">{location}</div>
 
-      {/* 🔥 LINK BUTTON */}
+      
       <Link to="/register" className="register-link">
-        Join Event
+        Join Event 
       </Link>
 
     </div>

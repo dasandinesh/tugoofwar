@@ -1,0 +1,103 @@
+.prize-section {
+  padding: 40px 15px;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+}
+
+.main-title {
+  color: #c62828;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.tamil-title {
+  font-size: 18px;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.event-info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.info-box {
+  background: #f1f1f1;
+  padding: 10px 20px;
+  border-left: 5px solid #c62828;
+  border-radius: 4px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+.prize-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.prize-table th {
+  background: #1a237e;
+  color: white;
+  padding: 12px;
+}
+
+.prize-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.amount {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.rules-section {
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff8e1;
+  border-radius: 8px;
+}
+
+.rules-section h3 {
+  color: #ff6f00;
+  margin-top: 0;
+}
+
+.registration-footer {
+  margin-top: 40px;
+}
+
+.promo-box {
+  background: #c62828;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.contact-now {
+  font-size: 20px;
+  margin-top: 15px;
+  background: white;
+  color: #c62828;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+}
