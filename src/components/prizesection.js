@@ -23,7 +23,7 @@ const PrizeSection = () => {
             <p>📅 <strong>Date:</strong> May 10, 2026 (மே 10, 2026)</p>
           </div>
           <div className="info-box">
-            <p>📍 <strong>Venue:</strong> Tenkasi (தென்காசி)</p>
+            <p>📍 <strong>Venue:</strong>பங்களாசுரண்டை,தென்காசி (Tenkasi dist)</p>
           </div>
         </div>
 

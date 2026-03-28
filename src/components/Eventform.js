@@ -129,12 +129,12 @@ function Eventform() {
           </a>
 
           {/* iPhone GPay */}
-          <a
+          {/* <a
             className="gpay-btn"
             href="https://pay.google.com/payments/u/0/pay?pa=saprabatraders@okhdfcbank&pn=belssy&am=1000&cu=INR"
           >
             Pay with GPay (iPhone)
-          </a>
+          </a> */}
 
           <button
             type="button"

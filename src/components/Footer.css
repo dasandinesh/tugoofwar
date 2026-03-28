@@ -1,0 +1,115 @@
+.footer {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  color: #ffffff;
+  padding: 40px 0 20px;
+  margin-top: 50px;
+  border-top: 4px solid #ffc107;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.footer-section h3 {
+  color: #ffc107;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.footer-section h4 {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.instagram-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(225, 48, 108, 0.3);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.instagram-icon {
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  color: #b0b0b0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.instagram-text {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.instagram-text:hover {
+  color: #e91e63;
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    text-align: center;
+  }
+  
+  .social-links {
+    align-items: center;
+  }
+  
+  .instagram-link {
+    justify-content: center;
+    max-width: 200px;
+  }
+}

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const EventCard = ({ date, location }) => {
   return (
+  
     <div className="card-box">
 
       <h3 className="card-title">Register Now</h3>
@@ -17,6 +18,8 @@ const EventCard = ({ date, location }) => {
       </Link>
 
     </div>
+  
+  
   );
 };
 
