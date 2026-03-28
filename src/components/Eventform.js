@@ -125,7 +125,15 @@ function Eventform() {
             className="gpay-btn"
             href="intent://pay?pa=saprabatraders@okhdfcbank&pn=belssy&am=1000&cu=INR#Intent;scheme=upi;package=com.google.android.apps.nbu.paisa.user;end;"
           >
-            Pay with GPay
+            Pay with GPay (Android)
+          </a>
+
+          {/* iPhone GPay */}
+          <a
+            className="gpay-btn"
+            href="https://pay.google.com/payments/u/0/pay?pa=saprabatraders@okhdfcbank&pn=belssy&am=1000&cu=INR"
+          >
+            Pay with GPay (iPhone)
           </a>
 
           <button

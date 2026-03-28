@@ -13,8 +13,8 @@ const PrizeSection = () => {
     <section className="prize-section">
       <div className="container">
         {/* Title Section */}
-        <h2 className="main-title">🏆 Tenkasi District Mega Tug of War 2026</h2>
-        <h3 className="tamil-title">தென்காசி மாவட்ட அளவிலான மாபெரும் வடம் இழுக்கும் போட்டி 2026</h3>
+        <h2 className="main-title">🏆 Tenkasi State Level Mega Tug of War 2026</h2>
+        <h3 className="tamil-title">தென்காசி மாநில அளவிலான மாபெரும் வடம் இழுக்கும் போட்டி 2026</h3>
         <p className="subtitle">வலிமை... ஒற்றுமை... வெற்றி! (Strength... Unity... Victory!)</p>
 
         {/* Event Details */}
